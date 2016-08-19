@@ -1,0 +1,44 @@
+body{
+    background-color: #f1f1f1;
+}
+.signUp{margin-top: 100px}
+.signUp h2{
+    color: #01a39b;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+input[type="text"],input[type="password"]{
+    background-color:#162f39;
+    color: #ffffff;
+}
+input[type="submit"]{
+    margin-left: 42%;
+    margin-top: 30px;
+}
+label{
+    color: #01a39b;
+}
+span{color: #01a39b;text-align: center}
+fieldset{
+    background-color: #162f39;
+    padding: 10px;
+    margin-bottom: 10px;
+    border:1px solid  #cccccc;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius:10px;
+}
+select{
+    display: block;
+   background-color: #01a39b;
+    color: #ffffff;
+}
+.city{
+    background-color: #162f39;
+    border-radius: 5px;
+    padding: 12px;
+}
+.admin label{
+    color: #ffffff;
+    font-size: 18px;
+}

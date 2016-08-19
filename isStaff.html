@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- IE compatibilty meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mufic</title>
+    <!--icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--icon-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="Logo3.png" type="image/png">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Droid+Sans'>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+</head>
+<body>
+
+
+<!--start loader-->
+<!--<div id="loader-wrapper">
+     <div id="loader"></div>
+
+     <div class="loader-section section-left"></div>
+     <div class="loader-section section-right"></div>
+
+ </div>-->
+<!--end loader-->
+
+<!--start logo-->
+<div class="logo">
+    <div class="container">
+        <div class="row">
+            <div class="logo  col-xs-10 ">
+                <img class="img-responsive hvr-grow" src="images/logo.jpg" height="80" width="80"/>
+                <div class="name">
+                    <p class="b">Faculty Of Computers And Information</p>
+                    <p class="a">Menoufia University</p>
+                    <p class="c">كلية الحاسبات والمعلومات جامعة المنوفيه</p>
+                </div>
+            </div>
+            <div class="col-xs-2 text-center">
+                <img class="img-responsive hvr-grow" src="images/logo2.jpg" height="80" width="80">
+            </div>
+        </div>
+    </div>
+</div>
+<!--end logo-->
+<!--start nav bar-->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#our-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse js-navbar-collapse" id="our-navbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="is.html">Home</a></li>
+                <li class="active"><a href="isStaff.html">Staff</a></li>
+                <li><a href="#">Student</a></li>
+                <li><a href="isMaterials.html">Materials</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="results.html">Exams Result</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">E-Portal <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="is3Portal.html">Third Year</a></li>
+                        <li><a href="is4Portal.html">Fourth Year</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign in <span class="caret"></span></a>
+                    <ul class="dropdown-menu signIn">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Email*</label>
+                                <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Password*</label>
+                                <input class="form-control" type="password">
+                                <a class="new" href="#">Forgot Password?</a>
+                                <input type="submit"  value="LOG IN">
+                                <a class="create" href="signUp.html">Create New Mufic account.</a>
+                            </div>
+                        </form>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.nav-collapse -->
+
+        </div>
+    </div><!-- end container div -->
+</nav>
+<!--end nav bar-->
+<!-- start bread crumbs-->
+<div class="bread-crumb">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="is.html">Home</a></li>
+            <li class="active">Staff</li>
+        </ol>
+    </div>
+</div>
+<!-- end bread crumbs-->
+<!--start carousel-->
+<section class="clip">
+    <div></div>
+    <div class="container">
+        <span>Latest News</span>
+        <div class="last-news">
+            <p class="lead">The Fulbright Commission opened the door for the progress of the program of scholarships</p>
+        </div>
+    </div>
+</section>
+<!-- start staff table-->
+<div class="staff">
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <td>الأسم</td>
+                    <td>الدرجه الوظيفيه</td>
+                    <td>الحاله الوظيفيه</td>
+                    <td>القسم</td>
+                    <td>الكليه</td>
+                </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl0_HyperLink1" href="http://mu.menofia.edu.eg/Wael_elWahed/StaffDetails/1/ar" style="color:Blue;">وائل فتحى محمد عبد الواحد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl0_Label8">استاذ</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl0_Label13">منهي خدمتة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl0_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl0_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl1_HyperLink1" href="http://mu.menofia.edu.eg/Ahmed_Kfafy/StaffDetails/1/ar" style="color:Blue;"> احمد محمد احمد كفافى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl1_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl1_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl1_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl1_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl2_HyperLink1" href="http://mu.menofia.edu.eg/nansy_alhfnawy/StaffDetails/1/ar" style="color:Blue;"> نانسى عباس على الحفناوى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl2_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl2_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl2_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl2_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl3_HyperLink1" href="http://mu.menofia.edu.eg/Osama_Mahmoud/StaffDetails/1/ar" style="color:Blue;">اسامه عبد الرؤوف عبد الرحمن محمود</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl3_Label8">استاذ مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl3_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl3_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl3_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl4_HyperLink1" href="http://mu.menofia.edu.eg/Heba_Albeah/StaffDetails/1/ar" style="color:Blue;">هبه محمد عاطف محمد البية</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl4_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl4_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl4_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl4_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl5_HyperLink1" href="http://mu.menofia.edu.eg/doaa_gomaa/StaffDetails/1/ar" style="color:Blue;">دعاء السيد محمد جمعه</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl5_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl5_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl5_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl5_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl6_HyperLink1" href="http://mu.menofia.edu.eg/Amgad_sayad/StaffDetails/1/ar" style="color:Blue;"> امجد منير محمد السيد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl6_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl6_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl6_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl6_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl7_HyperLink1" href="http://mu.menofia.edu.eg/Asma_Awad/StaffDetails/1/ar" style="color:Blue;">اسماء ابراهيم محمد عواض</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl7_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl7_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl7_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl7_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl8_HyperLink1" href="http://mu.menofia.edu.eg/Hager_Faty/StaffDetails/1/ar" style="color:Blue;">هاجر جمال متولى ابو فاتى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl8_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl8_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl8_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl8_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl9_HyperLink1" href="http://mu.menofia.edu.eg/doaa_shaer/StaffDetails/1/ar" style="color:Blue;">دعاء ابراهيم محمد الشاعر</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl9_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl9_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl9_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl9_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl10_HyperLink1" href="http://mu.menofia.edu.eg/norhan_khlaf/StaffDetails/1/ar" style="color:Blue;">نورهان محمد جلال احمد خلاف</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl10_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl10_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl10_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl10_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl11_HyperLink1" href="http://mu.menofia.edu.eg/abla_kabary/StaffDetails/1/ar" style="color:Blue;">عبلة سعد السيد كعبارى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl11_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl11_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl11_Label6">بحوث العمليات ودعم إتخاذ القرار</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl11_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl12_HyperLink1" href="http://mu.menofia.edu.eg/khald_almnam/StaffDetails/1/ar" style="color:Blue;"> خالد محمد امين محمد عبد المنعم زايد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl12_Label8">استاذ مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl12_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl12_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl12_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl13_HyperLink1" href="http://mu.menofia.edu.eg/wlaa_alltyf/StaffDetails/1/ar" style="color:Blue;"> ولاء على على عبد اللطيف</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl13_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl13_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl13_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl13_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl14_HyperLink1" href="http://mu.menofia.edu.eg/hyam_mwsy/StaffDetails/1/ar" style="color:Blue;">هيام عبد الله الحسينى موسى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl14_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl14_Label13">مبعوث بالخارج</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl14_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl14_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl15_HyperLink1" href="http://mu.menofia.edu.eg/mrwh_hsn/StaffDetails/1/ar" style="color:Blue;">مروة رشاد زارع حسن</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl15_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl15_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl15_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl15_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl16_HyperLink1" href="http://mu.menofia.edu.eg/nadr_hna/StaffDetails/1/ar" style="color:Blue;">نادر حنا عبد المسيح حنا</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl16_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl16_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl16_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl16_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl17_HyperLink1" href="http://mu.menofia.edu.eg/Osama_Younes/StaffDetails/1/ar" style="color:Blue;"> اسامه شبل عبد الغنى يونس</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl17_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl17_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl17_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl17_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl18_HyperLink1" href="http://mu.menofia.edu.eg/kariman_mabrok/StaffDetails/1/ar" style="color:Blue;">كريمان ممدوح محمد مبروك</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl18_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl18_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl18_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl18_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl19_HyperLink1" href="http://mu.menofia.edu.eg/mahmod_mohamed/StaffDetails/1/ar" style="color:Blue;">محمود سعيد فتحى محمد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl19_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl19_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl19_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl19_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl20_HyperLink1" href="http://mu.menofia.edu.eg/mohamed_zahran/StaffDetails/1/ar" style="color:Blue;">محمد صلاح محمد زهران</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl20_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl20_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl20_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl20_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl21_HyperLink1" href="http://mu.menofia.edu.eg/4294/StaffDetails/1/ar" style="color:Blue;">شيماء صابر عبد الحق زيد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl21_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl21_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl21_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl21_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl22_HyperLink1" href="http://mu.menofia.edu.eg/4463/StaffDetails/1/ar" style="color:Blue;">احمد سامى عبد الحمن ابو راضى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl22_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl22_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl22_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl22_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl23_HyperLink1" href="http://mu.menofia.edu.eg/4522/StaffDetails/1/ar" style="color:Blue;"> ايمان احمد ابو العنين محمد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl23_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl23_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl23_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl23_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl24_HyperLink1" href="http://mu.menofia.edu.eg/mohamed_hamad/StaffDetails/1/ar" style="color:Blue;">محمد عادل عبد الله حماد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl24_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl24_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl24_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl24_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl25_HyperLink1" href="http://mu.menofia.edu.eg/Hend_Said/StaffDetails/1/ar" style="color:Blue;">هند فرج بكر سيد احمد السيد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl25_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl25_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl25_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl25_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl26_HyperLink1" href="http://mu.menofia.edu.eg/Mohamed_kholy/StaffDetails/1/ar" style="color:Blue;">محمد ضاحى عبد الظاهر الخولى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl26_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl26_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl26_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl26_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl27_HyperLink1" href="http://mu.menofia.edu.eg/myna_abrahym/StaffDetails/1/ar" style="color:Blue;">مينا ابراهيم سمعان ابراهيم</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl27_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl27_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl27_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl27_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl28_HyperLink1" href="http://mu.menofia.edu.eg/Nora_smry/StaffDetails/1/ar" style="color:Blue;">نورا عبد المعز السباعى سمرى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl28_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl28_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl28_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl28_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl29_HyperLink1" href="http://mu.menofia.edu.eg/tamr_abrahym/StaffDetails/1/ar" style="color:Blue;">تامر فتحى غانم ابراهيم</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl29_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl29_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl29_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl29_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl30_HyperLink1" href="http://mu.menofia.edu.eg/Nadia_sarie/StaffDetails/1/ar" style="color:Blue;"> نادية سيد بدوى ابو سريع</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl30_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl30_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl30_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl30_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl31_HyperLink1" href="http://mu.menofia.edu.eg/4292/StaffDetails/1/ar" style="color:Blue;">سندس مجدى فضل على محمد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl31_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl31_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl31_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl31_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl32_HyperLink1" href="http://mu.menofia.edu.eg/4293/StaffDetails/1/ar" style="color:Blue;"> احمد محمد احمد عبد السلام</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl32_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl32_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl32_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl32_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl33_HyperLink1" href="http://mu.menofia.edu.eg/Ahmed_Afify/StaffDetails/1/ar" style="color:Blue;">احمد زاهر محمد عفيفى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl33_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl33_Label13">قائم بمهمة علمية</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl33_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl33_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl34_HyperLink1" href="http://mu.menofia.edu.eg/khald_asmaayl/StaffDetails/1/ar" style="color:Blue;"> خالد نبيل عبد الواحد اسماعيل</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl34_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl34_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl34_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl34_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl35_HyperLink1" href="http://mu.menofia.edu.eg/Mohie_Hadhood/StaffDetails/1/ar" style="color:Blue;">محيى محمد محمد هدهود</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl35_Label8">استاذ  متفرغ</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl35_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl35_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl35_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl36_HyperLink1" href="http://mu.menofia.edu.eg/Wael_Alkilany/StaffDetails/1/ar" style="color:Blue;">وائل شوقى عيسى الكيلانى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl36_Label8">استاذ مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl36_Label13">منقول من الكلية</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl36_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl36_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl37_HyperLink1" href="http://mu.menofia.edu.eg/ahmd_hmad/StaffDetails/1/ar" style="color:Blue;">احمد محمود احمد حماد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl37_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl37_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl37_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl37_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl38_HyperLink1" href="http://mu.menofia.edu.eg/ryham_alhbyan/StaffDetails/1/ar" style="color:Blue;">ريهام صلاح يوسف الهبيان</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl38_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl38_Label13">مبعوث بالخارج</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl38_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl38_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl39_HyperLink1" href="http://mu.menofia.edu.eg/Kamel_Morsy/StaffDetails/1/ar" style="color:Blue;"> كامل على مصطفى مرسى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl39_Label8">استاذ مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl39_Label13">منقول من الكلية</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl39_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl39_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl40_HyperLink1" href="http://mu.menofia.edu.eg/amynh_almhlawy/StaffDetails/1/ar" style="color:Blue;">امينة محمد ابو زيد المحلاوى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl40_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl40_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl40_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl40_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl41_HyperLink1" href="http://mu.menofia.edu.eg/ngwy_salm/StaffDetails/1/ar" style="color:Blue;">نجوى محمد ابو العنين سالم</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl41_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl41_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl41_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl41_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl42_HyperLink1" href="http://mu.menofia.edu.eg/aly_ahmd/StaffDetails/1/ar" style="color:Blue;">على فؤاد محمد سليمان</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl42_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl42_Label13">معار</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl42_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl42_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl43_HyperLink1" href="http://mu.menofia.edu.eg/Aly_Alhefnawy/StaffDetails/1/ar" style="color:Blue;">على محمد نهاد على الحفناوى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl43_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl43_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl43_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl43_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl44_HyperLink1" href="http://mu.menofia.edu.eg/samh_shnwdh/StaffDetails/1/ar" style="color:Blue;">سامح ظريف فهيم شنوده</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl44_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl44_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl44_Label6">تكنولوجيا المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl44_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl45_HyperLink1" href="http://mu.menofia.edu.eg/Fawzy_Turkey/StaffDetails/1/ar" style="color:Blue;"> فوزى على السيد تركى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl45_Label8">استاذ  متفرغ</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl45_Label13">معار</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl45_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl45_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl46_HyperLink1" href="http://mu.menofia.edu.eg/Abdalalym_frg/StaffDetails/1/ar" style="color:Blue;">عبد العليم كمال عبد العليم فرج</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl46_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl46_Label13">قائم بمهمة علمية</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl46_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl46_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl47_HyperLink1" href="http://mu.menofia.edu.eg/wlyd_atwh/StaffDetails/1/ar" style="color:Blue;"> وليد سعيد عبد الحميد عطوة</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl47_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl47_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl47_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl47_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl48_HyperLink1" href="http://mu.menofia.edu.eg/gmal_almhdy/StaffDetails/1/ar" style="color:Blue;"> جمال فاروق الهادى المتولى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl48_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl48_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl48_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl48_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl49_HyperLink1" href="http://mu.menofia.edu.eg/mstfy_ahmd/StaffDetails/1/ar" style="color:Blue;">مصطفى عبد الحليم مصطفى احمد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl49_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl49_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl49_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl49_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl50_HyperLink1" href="http://mu.menofia.edu.eg/Amyra_Alwahab/StaffDetails/1/ar" style="color:Blue;"> اميره ابراهيم عبد العاطى محمد عبد الوهاب</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl50_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl50_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl50_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl50_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl51_HyperLink1" href="http://mu.menofia.edu.eg/shimaa_elaal/StaffDetails/1/ar" style="color:Blue;">شيماء صبحى شعبان عبد العال</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl51_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl51_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl51_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl51_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl52_HyperLink1" href="http://mu.menofia.edu.eg/eman_kowta/StaffDetails/1/ar" style="color:Blue;">ايمان عبد الفتاح فتح الله قوطة</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl52_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl52_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl52_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl52_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl53_HyperLink1" href="http://mu.menofia.edu.eg/4291/StaffDetails/1/ar" style="color:Blue;"> رقية محسن راشد عابدين</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl53_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl53_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl53_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl53_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl54_HyperLink1" href="http://mu.menofia.edu.eg/Mohamed_Malhat/StaffDetails/1/ar" style="color:Blue;"> محمد جابر محمد ملهط</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl54_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl54_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl54_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl54_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl55_HyperLink1" href="http://mu.menofia.edu.eg/Alla_Alsobky/StaffDetails/1/ar" style="color:Blue;"> الاء محمود محمد السبكى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl55_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl55_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl55_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl55_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl56_HyperLink1" href="http://mu.menofia.edu.eg/4520/StaffDetails/1/ar" style="color:Blue;">ابراهيم عبد الله عباس عطوة الجندى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl56_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl56_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl56_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl56_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl57_HyperLink1" href="http://mu.menofia.edu.eg/4523/StaffDetails/1/ar" style="color:Blue;">ايمان ابراهيم السيد خليل البديوى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl57_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl57_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl57_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl57_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl58_HyperLink1" href="http://mu.menofia.edu.eg/4524/StaffDetails/1/ar" style="color:Blue;">محمد صابر عبد الرحمن صقر</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl58_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl58_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl58_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl58_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl59_HyperLink1" href="http://mu.menofia.edu.eg/Anas_ywsf/StaffDetails/1/ar" style="color:Blue;"> انس عبد العزيز عبدالرحمن يوسف</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl59_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl59_Label13">منهي خدمتة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl59_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl59_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl60_HyperLink1" href="http://mu.menofia.edu.eg/Sameh_Abdallah/StaffDetails/1/ar" style="color:Blue;">سامح محمد شهدى احمد عبد الله</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl60_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl60_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl60_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl60_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+
+
+                <tr >
+
+                    <td class="col1">
+                        <a id="ctl00_MainContentPlaceHolder_ListView1_ctrl61_HyperLink1" href="http://mu.menofia.edu.eg/2746/StaffDetails/1/ar" style="color:Blue;">محمد المنشاوى سليمان محمد</a>
+                    </td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl61_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl61_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl61_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl61_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+
+
+                <tr >
+
+                    <td class="col1">
+                        <a id="ctl00_MainContentPlaceHolder_ListView1_ctrl62_HyperLink1" href="http://mu.menofia.edu.eg/arby_kshk/StaffDetails/1/ar" style="color:Blue;"> عربى السيد ابراهيم كشك</a>
+                    </td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl62_Label8">استاذ</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl62_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl62_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl62_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl63_HyperLink1" href="http://mu.menofia.edu.eg/Hamdy_Mostafa/StaffDetails/1/ar" style="color:Blue;">حمدى محمد موسى مصطفى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl63_Label8">استاذ مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl63_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl63_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl63_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl64_HyperLink1" href="http://mu.menofia.edu.eg/Nader_Alsayed/StaffDetails/1/ar" style="color:Blue;"> نادر محمود الشحات السيد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl64_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl64_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl64_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl64_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl65_HyperLink1" href="http://mu.menofia.edu.eg/hany_mhgwb/StaffDetails/1/ar" style="color:Blue;">هانى محمد سعيد عبد النبى محجوب</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl65_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl65_Label13">معار</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl65_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl65_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl66_HyperLink1" href="http://mu.menofia.edu.eg/ashrf_alsysy/StaffDetails/1/ar" style="color:Blue;"> اشرف بهجات ابراهيم السيسى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl66_Label8">استاذ</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl66_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl66_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl66_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl67_HyperLink1" href="http://mu.menofia.edu.eg/Sherif_Alatrby/StaffDetails/1/ar" style="color:Blue;"> شريف سعيد على العتربى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl67_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl67_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl67_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl67_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl68_HyperLink1" href="http://mu.menofia.edu.eg/Eman_alsdwdy/StaffDetails/1/ar" style="color:Blue;"> ايمان مصيلحى محمد السدودى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl68_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl68_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl68_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl68_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl69_HyperLink1" href="http://mu.menofia.edu.eg/nhy_alabyd/StaffDetails/1/ar" style="color:Blue;">نهى شوقى فريد الابيض</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl69_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl69_Label13">قائم باجازة خاصة</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl69_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl69_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl70_HyperLink1" href="http://mu.menofia.edu.eg/Elham_hmzh/StaffDetails/1/ar" style="color:Blue;"> الهام السيد محمود عيد حمزة</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl70_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl70_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl70_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl70_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl71_HyperLink1" href="http://mu.menofia.edu.eg/hmadh_zhrh/StaffDetails/1/ar" style="color:Blue;">حمادة محمد عبد السميع زهرة</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl71_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl71_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl71_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl71_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl72_HyperLink1" href="http://mu.menofia.edu.eg/mhmwd_hsyn/StaffDetails/1/ar" style="color:Blue;">محمود محمد محمود حسين</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl72_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl72_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl72_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl72_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl73_HyperLink1" href="http://mu.menofia.edu.eg/afaf_mwsy/StaffDetails/1/ar" style="color:Blue;">عفاف محمود سمير محمد موسى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl73_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl73_Label13">مبعوث بالخارج</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl73_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl73_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl74_HyperLink1" href="http://mu.menofia.edu.eg/703/StaffDetails/1/ar" style="color:Blue;"> محمد محمد نبيل محمد شمس الدين</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl74_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl74_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl74_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl74_Label7">الحاسبات والمعلومات</span></td>
+
+                </tr>
+
+
+                <tr >
+
+                    <td class="col1">
+                        <a id="ctl00_MainContentPlaceHolder_ListView1_ctrl75_HyperLink1" href="http://mu.menofia.edu.eg/Nabil_Ismail/StaffDetails/1/ar" style="color:Blue;">نبيل عبد الواحد محمد اسماعيل</a>
+                    </td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl75_Label8">استاذ  متفرغ</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl75_Label13">منقول من الكلية</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl75_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl75_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr>
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl76_HyperLink1" href="http://mu.menofia.edu.eg/mdht_alaarg/StaffDetails/1/ar" style="color:Blue;"> مدحت احمد توفيق عبد الهادى الاعرج</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl76_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl76_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl76_Label6">علوم الحاسب</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl76_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl77_HyperLink1" href="http://mu.menofia.edu.eg/Hamdy_Ibrahym/StaffDetails/1/ar" style="color:Blue;">حمدى عبد الحميد ابراهيم ابراهيم</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl77_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl77_Label13">قائم بالعمل</span></td>
+                    <td class="col3"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl77_Label6">نظم المعلومات</span></td>
+                    <td class="col4"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl77_Label7">الحاسبات والمعلومات</span></td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl78_HyperLink1" href="http://mu.menofia.edu.eg/rda_mbrwk/StaffDetails/1/ar" style="color:Blue;">رضا محمد حسين محمد مبروك</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl78_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl78_Label13">قائم بالعمل</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl79_HyperLink1" href="http://mu.menofia.edu.eg/amyrh_ahmd/StaffDetails/1/ar" style="color:Blue;">اميره عبد الوهاب احمد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl79_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl79_Label13">قائم بمهمة علمية</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl80_HyperLink1" href="http://mu.menofia.edu.eg/asmaa_alsyd/StaffDetails/1/ar" style="color:Blue;"> اسماء هارون على السيد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl80_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl80_Label13">قائم باجازة خاصة</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl81_HyperLink1" href="http://mu.menofia.edu.eg/Emad_abd/StaffDetails/1/ar" style="color:Blue;">عماد سعيد عبد العليم سالم العبد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl81_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl81_Label13">معار</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl82_HyperLink1" href="http://mu.menofia.edu.eg/wrdh_alkhwly/StaffDetails/1/ar" style="color:Blue;">وردة ابراهيم احمد الخولى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl82_Label8">مدرس مساعد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl82_Label13">مبعوث بالخارج</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl83_HyperLink1" href="http://mu.menofia.edu.eg/mohamed_elaziz/StaffDetails/1/ar" style="color:Blue;">محمد  مصطفى السيد عبد العزيز</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl83_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl83_Label13">قائم بالعمل</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl84_HyperLink1" href="http://mu.menofia.edu.eg/ahmed_elnaby/StaffDetails/1/ar" style="color:Blue;">احمد مصطفى يوسف عبد النبى</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl84_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl84_Label13">قائم بالعمل</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl85_HyperLink1" href="http://mu.menofia.edu.eg/mohamed_hegazy5228/StaffDetails/1/ar" style="color:Blue;">محمد حامد ابراهيم حجازي</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl85_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl85_Label13">قائم بالعمل</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl86_HyperLink1" href="http://mu.menofia.edu.eg/hatm_alkadr/StaffDetails/1/ar" style="color:Blue;">حاتم محمد سيد احمد عبد القادر</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl86_Label8">استاذ</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl86_Label13">قائم بالعمل</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl87_HyperLink1" href="http://mu.menofia.edu.eg/rashd_salm/StaffDetails/1/ar" style="color:Blue;">راشد خليل خليل سالم</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl87_Label8">مدرس</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl87_Label13">قائم بالعمل</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl88_HyperLink1" href="http://mu.menofia.edu.eg/Faten_Ahmed/StaffDetails/1/ar" style="color:Blue;">فاتن عبد الحميد خليفة احمد</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl88_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl88_Label13">قائم باجازة خاصة</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl89_HyperLink1" href="http://mu.menofia.edu.eg/Nagla_Badr/StaffDetails/1/ar" style="color:Blue;">نجلاء مصطفى فهمى محمد بدر</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl89_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl89_Label13">قائم بالعمل</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl90_HyperLink1" href="http://mu.menofia.edu.eg/sarah_salama/StaffDetails/1/ar" style="color:Blue;">سارة عزت عبد الرسول سلامة</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl90_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl90_Label13">قائم بالعمل</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+                <tr >
+                    <td class="col1"><a id="ctl00_MainContentPlaceHolder_ListView1_ctrl91_HyperLink1" href="http://mu.menofia.edu.eg/ahmed_farg/StaffDetails/1/ar" style="color:Blue;">احمد  مصطفى ابراهيم فرج</a></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl91_Label8">معيد</span></td>
+                    <td class="col2"> <span id="ctl00_MainContentPlaceHolder_ListView1_ctrl91_Label13">قائم بالعمل</span></td>
+                    <td>نظم المعلومات</td>
+                    <td>الحاسبات والمعلومات</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tfoot>
+
+        </table>
+    </div>
+</div>
+<!-- end staff table-->
+
+<!-- start shape2-->
+<div class="clip2">
+
+</div>
+<!-- end shape2-->
+<!--start footer-->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Site Map</h2>
+                <ul class="list-unstyled three-columns">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="contact.html.html"><li>Contact</li></a>
+                    <a href="#"><li>Media Center</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="faq.html"><li>FAQ</li></a>
+                    <a href="cs.html"><li>CS</li></a>
+                    <a href="it.html"><li>IT</li></a>
+                    <a href="is.html"><li>IS</li></a>
+                </ul>
+
+            </div>
+            <div class="col-md-4">
+                <h2>About Us</h2>
+                <p class="lead">Menofia University (MU) was founded rted withfour faculties with nearly 9500 students, 214 staff members and 372 assisting members.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Contact Us</h2>
+                <span>Get In Touch With Us</span>
+                <div class="social">
+                    <a href="https://www.facebook.com/Faculty-of-Computer-and-information-AR-544711865604435/" target="_blank" class="facebook hvr-grow"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://twitter.com/fci_ar" target="_blank" class="twitter hvr-grow"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    <a href="#" class="google hvr-grow"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    <a href="#" class="linked hvr-grow"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    <a href="https://www.youtube.com/channel/UCfFmKc3AGVSdsOGPIEgC_lg" target="_blank" class="youtube hvr-grow"> <i class="fa fa-youtube-square fa-2x"></i></a>
+                </div>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search fa-lg"></i></button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<div class="copy-right text-center">
+    <p>&copy;2016 All Rights Reserved To <span>MUFIC</span></p>
+</div>
+<!--end footer-->
+<!-- start scroll up-->
+<div id="scroll">
+    <i class="fa fa-chevron-up fa-2x"></i>
+</div>
+<!-- end scroll up-->
+
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+<!--<script src="js/jquery.nicescroll.min.js"></script>-->
+<script src="js/plugin.js"></script>
+</body>
+</html>

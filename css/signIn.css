@@ -1,0 +1,27 @@
+/* start sign in style*/
+body{
+    background-color: #16304b;
+}
+.signIn{margin-top: 100px}
+.signIn h1{
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+input[type="text"],input[type="password"]{
+    background-color:#264a60;
+    color: #ffffff;
+}
+.new{margin-left: 70%}
+input[type="submit"]{
+    margin-left: 30%;
+    margin-top: 30px;
+    display: block;
+    width: 240px;
+    margin-bottom: 30px;
+}
+label{
+    color: #ffffff;
+}
+span{color: #ffffff}
+/* end sign in style*/

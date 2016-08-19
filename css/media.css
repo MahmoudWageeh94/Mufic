@@ -1,0 +1,105 @@
+/*extra small*/
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .dropdown-menu > li > a, .dropdown-menu2 > li > a {
+        color: #ffffff;
+    }
+    .third > span {
+        color: #ffffff;
+        margin-left: 15px;
+    }
+    .signIn input[type="text"], input[type="password"] {
+        background-color: #ffffff;
+        color: #333333;
+        width: 500px;
+    }
+    label{color: #ffffff}
+    input[type="submit"] {
+        background-color: #ffffff;
+        color: #162f39;
+    }
+    .create {
+        color: #ffffff;
+        margin-left: 20%;
+    }
+    .new {
+        margin-left: 50%;
+        color: #ffffff;
+    }
+    .dropdown-menu2 {
+        position: relative;
+        top: 100%;
+        left: 30px;
+        float: left;
+       width: 100%;
+    }
+    .navbar .navbar-nav > li > a {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    body {
+        overflow-x: hidden
+    }
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        max-height: none
+    }
+    .navbar-collapse{margin-left:0;background-color:#162f39}
+    #scroll {
+        padding: 5px;
+    }
+    .subscribe .form-control {
+        margin: 20px auto
+    }
+    .news button{
+        margin-left: 40%;
+        margin-bottom:30px;
+        width: 200px
+    }
+    .navBar-bottom{
+        display: none;
+    }
+    .result label{color: #333}
+    .result input[type="submit"] {
+        background-color: #01a39b;
+        color: #ffffff;
+    }
+    .news a{
+        margin-left: 40%;
+    }
+    /*.logo{
+        display: none;
+    }*/
+}
+/*small screen*/
+@media (min-width: 768px ) and (max-width: 991px){
+    .dropdown:hover .dropdown-menu{display: block}
+    .navbar-collapse{margin-left:4%;background-color: #162f39}
+     .dropdown-menu{right: 0}
+    .news button{
+        margin-left: 30%;
+        margin-bottom:30px;
+        width:300px
+    }
+    .new{margin-left: 60%}
+    .news a{
+        margin-left: 40%;
+    }
+}
+/* medium screen*/
+@media (min-width: 992px)and (max-width: 1199px) {
+    .dropdown:hover .dropdown-menu{display: block}
+    .navbar-collapse{margin-left:13%;background-color: #162f39}
+    .all{
+        height: 750px;
+    }
+    .new{margin-left: 60%}
+}
+/* large screen*/
+@media (min-width: 1200px) {
+    .navbar-collapse{margin-left:20%;background-color: #162f39}
+    .dropdown:hover .dropdown-menu{display: block}
+}
+
